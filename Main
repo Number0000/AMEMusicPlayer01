@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+       <!-- 
+        <!-- Latest compiled and minified CSS
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        -->
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>AME Music Player: Outstanding</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = "text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+        <script type = "text/javascript" src="wordcache.js"></script>
+        <script type = "text/javascript" src="fuzzyset.js"></script>
+        <script type = "text/javascript" src="app.js"></script>
+        <!--link that haven't connect through -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <style type="text/css"/>
+
+        
+        <style type = "text/css">
+            .jumbotron {
+		background-color: #333;
+		color: #fff;
+            }
+            .jumbotron p {
+                    color: #aaa;
+            }
+            .jumbotron a {
+                    color: #fff;
+            }
+        </style>
+        
+    </head>
+    <body onload = "startApp()">
+        
+        <!-- Main jumbotron for a primary
+        marketing message or call to action -->
+        <div class="jumbotron">
+		<div class="container">
+			<h2>Spotify WebAPI Playlist Shuffle</h2>
+		</div>
+	</div>
+        
+            <div class="container">
+                <!-- Example row of Column -->
+                <div class ="row">
+                    <div class="col-md-6">
+                        <h2>Please select your categories here</h2>
+                        <ul>
+                            <li>Pop/Funk</li>
+                            <li>Folk/Country</li>
+                            <li>Acoustic/Classic</li>
+                            <li>Jazz/Blues</li>
+                            <li>Hip Hop/Rap</li>
+                            <li>Rock/Punk</li>
+                        </ul>
+                        <div class="form-group">
+                            <textarea class="form-control" id="alltext" rows="5" maxlength="500"></textarea>
+                        </div>
+                        <p>
+                            <button class="btn btn-lg btn-primary btn-success" id="start">Create a Spotify playlist!</button>
+                        </p>
+                        <div class="col-md-6">
+                            <h2>Corresponding track names</h2>
+                            <div id="debug"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
